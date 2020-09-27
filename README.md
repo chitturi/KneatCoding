@@ -1,6 +1,6 @@
-#DING AUTOMATION TASKS#
+DING AUTOMATION TASKS
 ---
-##There are two feature files in this task#
+There are two feature files in this task
 ```
 1-APITesting.feature
 2-PayPalLogin.feature
@@ -8,7 +8,7 @@
 
 To Run this feature you need cucumber, maven, java installed in your IDE or in your laptop if you run from Command Line
 
-###Run from Command line:
+Run from Command line:
 
 First run 
 
