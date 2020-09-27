@@ -1,6 +1,7 @@
 package runner;
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.TestNGCucumberRunner;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
 import cucumber.api.testng.CucumberFeatureWrapper;
 
 import java.util.concurrent.TimeUnit;
@@ -14,7 +15,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 @CucumberOptions(
-        features = "src/test/resources/features",
+        features = "src/test/resources/features/PayPalLogin.feature",
         glue = {"stepdefs"},
         tags = {"~@Ignore"},
         format = {
@@ -23,7 +24,7 @@ import org.testng.annotations.Test;
                 "json:target/cucumber-reports/json-reports/CucumberTestReport.json",
                 "rerun:target/cucumber-reports/rerun-reports/rerun.txt"
         })
-public class DingRunner {
+public class DingRunner extends AbstractTestNGCucumberTests {
 
 	public static WebDriver driver;
     private TestNGCucumberRunner testNGCucumberRunner;
@@ -43,7 +44,8 @@ public class DingRunner {
         testNGCucumberRunner.runCucumber(cucumberFeature.getCucumberFeature());
     }
 
-    @DataProvider
+    @Override
+    @DataProvider(parallel=true)
     public Object[][] features() {
         return testNGCucumberRunner.provideFeatures();
     }

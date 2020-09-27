@@ -3,6 +3,8 @@ package utils;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -11,6 +13,7 @@ import modal.Pet;
 
 public class JSONhelper {
 
+	@SuppressWarnings("unchecked")
 	public Pet JSONRequest() {
 		Pet pet = new Pet();
 		try {
@@ -27,7 +30,13 @@ public class JSONhelper {
 
 			String status = (String) jsonObject.get("status");
 			pet.setStatus(status);
-
+			
+			JSONArray tags = (JSONArray) jsonObject.get("tags");
+			pet.setTags(tags);
+			
+			JSONArray photoURLS = (JSONArray) jsonObject.get("photoUrls");
+			pet.setPhotoUrls(photoURLS);
+			
 		}catch(FileNotFoundException e1)
 		{
 			e1.printStackTrace();

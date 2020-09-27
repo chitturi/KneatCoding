@@ -6,7 +6,7 @@ import managers.PageObjectManager;
 import runner.DingRunner;
 import cucumber.api.java.en.Then;
 
-import org.openqa.selenium.WebDriver;
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 
 import cucumber.api.java.en.And;

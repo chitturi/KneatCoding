@@ -1,4 +1,4 @@
-@functionaltest
+@Logintest
 Feature: To Test failed login scenarios
    
   @login 

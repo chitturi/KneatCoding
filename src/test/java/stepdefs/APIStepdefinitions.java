@@ -1,5 +1,7 @@
 package stepdefs;
 
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -15,6 +17,7 @@ import utils.JSONhelper;
 
 public class APIStepdefinitions {
 
+	private static final Logger logger = Logger.getLogger(LoginStepDefinitions.class);
 	private static final String BaseUrl = "https://petstore.swagger.io/";
 	private static RequestEndPoints endPoints;
 	private static Response response;
@@ -23,16 +26,19 @@ public class APIStepdefinitions {
 
 	@Given("^I have a payload with pet information$")
 	public void i_have_a_payload_with_pet_information() throws Throwable {
+		//BasicConfigurator.configure();
 		endPoints = new RequestEndPoints(BaseUrl);
 		JSONhelper jsonHelper = new JSONhelper();
 		addPet = jsonHelper.JSONRequest();
 		ObjectMapper mapper = new ObjectMapper();
 		jsonPet = mapper.writeValueAsString(addPet);
+		logger.info("\nRequest for POST call: \n"+jsonPet);
 	}
 
 	@When("^I send a POST request to add a new pet$")
 	public void i_send_a_POST_request_to_add_a_new_pet() throws Throwable {
 		response = endPoints.addPet(jsonPet);
+		logger.info("\nResponse of POST call: \n"+response.getBody().asString());
 	}
 
 	@Then("^I get a response with (\\d+) success$")
@@ -59,7 +65,8 @@ public class APIStepdefinitions {
 
 	@When("^I send a GET request to get details of pet based on ID$")
 	public void i_send_a_GET_request_to_get_details_of_pet_based_on_ID() throws Throwable {
-		response = endPoints.getPet(1);	   
+		response = endPoints.getPet(1);	
+		logger.info("\nResponse for GET call: \n"+response.getBody().asString());
 	}
 
 	@Then("^I can see pet details in response body$")
@@ -81,7 +88,10 @@ public class APIStepdefinitions {
 	public void i_send_a_POST_request_with_pet_ID_and_status_as_sold() throws Throwable {
 		ObjectMapper mapper = new ObjectMapper();
 		jsonPet = mapper.writeValueAsString(addPet);
+		logger.info("\nRequest for PUT call: \n"+jsonPet);
 		response = endPoints.updatePet(jsonPet);
+		logger.info("\nResponse for PUT call: \n"+response.getBody().asString());
+		
 	}
 
 	@And("^I can see pet details updated in response body$")
@@ -97,6 +107,7 @@ public class APIStepdefinitions {
 	@When("^I send a DELETE request with pet ID$")
 	public void i_send_a_DELETE_request_with_pet_ID() throws Throwable {
 		response = endPoints.removePet(1);
+		logger.info("\nResponse for DELETE call: \n"+response.getBody().asString());
 	}
 
 	@And("^I can see deleted pet details in response body$")

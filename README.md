@@ -16,6 +16,12 @@ First run
 mvn clean install
 ```
 
+To run all feature files in parallel
+
+```
+mvn test
+```
+
 To run only PayPalLogin.feature file
 
 ```
@@ -31,7 +37,7 @@ mvn test -Dcucumber.options="--tags @APITest"
 If you want to run Specific scenario from a feature just add name of the scenario next to --tags option
 
 ```
-Example: mvn test -Dcucumber.options="--tags @login"
+Example: mvn test -Dcucumber.options="--tags @@APIPostCall"
 ``````
 Above example only scenario tagged with login will run.
 
