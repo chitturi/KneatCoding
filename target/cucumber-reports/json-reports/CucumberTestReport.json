@@ -1,0 +1,672 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 33244843,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.initializeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Create a pet - POST CALL",
+        "description": "",
+        "id": "crud-operations-on-pet;create-a-pet---post-call",
+        "after": [
+          {
+            "result": {
+              "duration": 342293,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1112667598,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have a payload with pet information",
+            "match": {
+              "location": "APIStepdefinitions.i_have_a_payload_with_pet_information()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1548025336,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I send a POST request to add a new pet",
+            "match": {
+              "location": "APIStepdefinitions.i_send_a_POST_request_to_add_a_new_pet()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5455802,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I get a response with 200 success",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "APIStepdefinitions.i_get_a_response_with_success(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 476960357,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I validate pet details in response body",
+            "match": {
+              "location": "APIStepdefinitions.i_validate_pet_details_in_response_body()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 122383,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.initializeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Find a pet - GET CALL based on Pet ID",
+        "description": "",
+        "id": "crud-operations-on-pet;find-a-pet---get-call-based-on-pet-id",
+        "after": [
+          {
+            "result": {
+              "duration": 122857,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 67853,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I had ID of pet",
+            "match": {
+              "location": "APIStepdefinitions.i_had_ID_of_pet()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 928636869,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I send a GET request to get details of pet based on ID",
+            "match": {
+              "location": "APIStepdefinitions.i_send_a_GET_request_to_get_details_of_pet_based_on_ID()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 205876,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I get a response with 200 success",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "APIStepdefinitions.i_get_a_response_with_success(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 35723804,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I can see pet details in response body",
+            "match": {
+              "location": "APIStepdefinitions.i_can_see_pet_details_in_response_body()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 197680,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.initializeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Update a pet - PUT CALL to update Pet Status",
+        "description": "",
+        "id": "crud-operations-on-pet;update-a-pet---put-call-to-update-pet-status",
+        "after": [
+          {
+            "result": {
+              "duration": 140897,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 50879,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I had ID of pet",
+            "match": {
+              "location": "APIStepdefinitions.i_had_ID_of_pet()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1333734,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I want to update pet status as \"sold\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sold",
+                  "offset": 32
+                }
+              ],
+              "location": "APIStepdefinitions.i_want_to_update_pet_status_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 684522525,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I send a PUT request with pet ID and status as sold",
+            "match": {
+              "location": "APIStepdefinitions.i_send_a_POST_request_with_pet_ID_and_status_as_sold()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 340752,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I get a response with 200 success",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "APIStepdefinitions.i_get_a_response_with_success(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 30028558,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I can see pet details updated in response body",
+            "match": {
+              "location": "APIStepdefinitions.i_can_see_pet_details_updated_in_response_body()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 147846,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.initializeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Delete a pet - DELETE PET based on Pet ID",
+        "description": "",
+        "id": "crud-operations-on-pet;delete-a-pet---delete-pet-based-on-pet-id",
+        "after": [
+          {
+            "result": {
+              "duration": 127721,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 45447,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I had ID of pet",
+            "match": {
+              "location": "APIStepdefinitions.i_had_ID_of_pet()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 939164765,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I send a DELETE request with pet ID",
+            "match": {
+              "location": "APIStepdefinitions.i_send_a_DELETE_request_with_pet_ID()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 196815,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I get a response with 200 success",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "APIStepdefinitions.i_get_a_response_with_success(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17661708,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I can see deleted pet details in response body",
+            "match": {
+              "location": "APIStepdefinitions.i_can_see_deleted_pet_details_in_response_body()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "CRUD Operations on Pet",
+    "description": "",
+    "id": "crud-operations-on-pet",
+    "keyword": "Feature",
+    "uri": "APITesting.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@APItest"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 111009,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.initializeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Test with entering wrong password",
+        "description": "",
+        "id": "to-test-failed-login-scenarios;test-with-entering-wrong-password",
+        "after": [
+          {
+            "result": {
+              "duration": 95053,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1933724623,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on Paypal UK login page",
+            "match": {
+              "location": "LoginStepDefinitions.i_am_on_Paypal_UK_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 443090546,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter email \"chitturi.udaykiran@gmail.com\" and click on Next button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "chitturi.udaykiran@gmail.com",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginStepDefinitions.i_enter_email_and_click_on_Next_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 652400112,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I see Password page with password field",
+            "match": {
+              "location": "LoginStepDefinitions.i_see_Password_page_with_password_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 937821278,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter wrong password \"testpassword\" and click on Login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testpassword",
+                  "offset": 24
+                }
+              ],
+              "location": "LoginStepDefinitions.i_enter_wrong_password_and_click_on_Login(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 35204560,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I see Login error with incorrect information",
+            "match": {
+              "location": "LoginStepDefinitions.i_see_Login_error_with_incorrect_information()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 79920,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.initializeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Test without entering any email in Email address field",
+        "description": "",
+        "id": "to-test-failed-login-scenarios;test-without-entering-any-email-in-email-address-field",
+        "after": [
+          {
+            "result": {
+              "duration": 109567,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 840164322,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I am on Paypal UK login page",
+            "match": {
+              "location": "LoginStepDefinitions.i_am_on_Paypal_UK_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 158682650,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click on Login button with empty Email field",
+            "match": {
+              "location": "LoginStepDefinitions.i_click_on_Login_button_with_empty_Email_field()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 86116838,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I see an error with information to enter Email address or mobile number",
+            "match": {
+              "location": "LoginStepDefinitions.i_see_an_error_with_information_to_enter_Email_address_or_mobile_number()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 219625,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.initializeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Test without entering any password in password field",
+        "description": "",
+        "id": "to-test-failed-login-scenarios;test-without-entering-any-password-in-password-field",
+        "after": [
+          {
+            "result": {
+              "duration": 83472,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1269577751,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I am on Paypal UK login page",
+            "match": {
+              "location": "LoginStepDefinitions.i_am_on_Paypal_UK_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 296858460,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I enter email \"chitturi.udaykiran@gmail.com\" and click on Next button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "chitturi.udaykiran@gmail.com",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginStepDefinitions.i_enter_email_and_click_on_Next_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 617907839,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I see Password page with password field",
+            "match": {
+              "location": "LoginStepDefinitions.i_see_Password_page_with_password_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 84610922,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Click on Login button with empty password field",
+            "match": {
+              "location": "LoginStepDefinitions.click_on_Login_button_with_empty_password_field()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 40517692,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I see an error Password is required",
+            "match": {
+              "location": "LoginStepDefinitions.i_see_an_error_Password_is_required()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To Test failed login scenarios",
+    "description": "",
+    "id": "to-test-failed-login-scenarios",
+    "keyword": "Feature",
+    "uri": "PayPalLogin.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@functionaltest"
+      }
+    ]
+  }
+]

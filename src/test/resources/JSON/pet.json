@@ -1,0 +1,14 @@
+{
+  "id": 1,
+  "name": "doggie",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "Dog"
+    }
+  ],
+  "status": "available"
+}
