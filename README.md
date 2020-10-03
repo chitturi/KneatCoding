@@ -7,7 +7,7 @@ There are two feature files in this task
 2-Suanafilter.feature
 ```
 
-To Run this feature you need cucumber, maven, java installed in your IDE or in your laptop if you run from Command Line
+To Run this feature you need cucumber, maven, java installed in your IDE or in your laptop.
 
 Run from Command line:
 
