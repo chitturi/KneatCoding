@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runner.TestRunner" time="67.559" tests="2" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.2+9-LTS"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-oracle/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/udaychitturi/KneatCoding"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.country" value="IE"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/udaychitturi/KneatCoding"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.2+9-LTS"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/opt/apache-maven-3.3.9/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="5.4.0-48-generic"/>
+    <property name="user.home" value="/home/udaychitturi"/>
+    <property name="user.timezone" value="Europe/Dublin"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="udaychitturi"/>
+    <property name="java.class.path" value="/opt/apache-maven-3.3.9/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.home" value="/usr/lib/jvm/java-11-oracle"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.2"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/opt/apache-maven-3.3.9"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2019-01-15"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="feature" classname="runner.TestRunner" time="39.149"/>
+  <testcase name="feature" classname="runner.TestRunner" time="28.41">
+    <failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .bui-calendar__control--next svg  (tried for 10 second(s) with 500 MILLISECONDS interval)&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;IE4-CP-L531&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-48-generic&apos;, java.version: &apos;11.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528139 (47ead77cb35ad2a9a83248b292151462a66cd881), userDataDir=/tmp/.org.chromium.Chromium.gBaJKg}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=85.0.4183.121, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]&#10;Session ID: b76976e31d45fa6303768646903af181" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .bui-calendar__control--next svg  (tried for 10 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'IE4-CP-L531', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-48-generic', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528139 (47ead77cb35ad2a9a83248b292151462a66cd881), userDataDir=/tmp/.org.chromium.Chromium.gBaJKg}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=85.0.4183.121, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: b76976e31d45fa6303768646903af181
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at pageObjects.HomePage.selectDates(HomePage.java:84)
+	at stepdefs.CommonStepDefinitions.i_Enter_dates_for_one_night_from_months(CommonStepDefinitions.java:37)
+	at ✽.And I Enter dates for one night from 3 months(Starfilter.feature:7)
+</failure>
+    <system-out><![CDATA[@Starfeature
+Feature: To Test Star filter
+2020-10-03 11:18:57 INFO  Helpers:30 - Waiting for an element: By.id: onetrust-accept-btn-handler
+
+  Background: User navigates to Search results                         &amp#27;[90m# Starfilter.feature:4&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on Booking home page&amp#27;[0m                                    &amp#27;[90m# CommonStepDefinitions.i_am_on_Booking_home_page()&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI Enter Limerick as City&amp#27;[0m                                       &amp#27;[90m# CommonStepDefinitions.i_Enter_Limerick_as_City()&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI Enter dates for one night from &amp#27;[0m&amp#27;[32m&amp#27;[1m3&amp#27;[0m&amp#27;[32m months&amp#27;[0m                      &amp#27;[90m# CommonStepDefinitions.i_Enter_dates_for_one_night_from_months(int)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click on Search Button&amp#27;[0m                                      &amp#27;[90m# CommonStepDefinitions.i_click_on_Search_Button()&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI can see All types of rentals are loaded with filter options&amp#27;[0m &amp#27;[90m# CommonStepDefinitions.i_can_see_All_types_of_rentals_are_loaded_with_filter_options()&amp#27;[0m
+2020-10-03 11:19:08 INFO  SearchResultsPage:126 - StaleElementException Handled
+
+  @5Starscenario
+  Scenario: To Test 5 Star Rating Filter                       &amp#27;[90m# Starfilter.feature:12&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on search results page&amp#27;[0m                       &amp#27;[90m# CommonStepDefinitions.user_is_on_search_results_page()&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI checked if any filters are activated and cleared&amp#27;[0m     &amp#27;[90m# CommonStepDefinitions.i_checked_if_any_filters_are_activated_and_cleared()&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click on &amp#27;[0m&amp#27;[32m&amp#27;[1m5&amp#27;[0m&amp#27;[32m Star filter&amp#27;[0m                              &amp#27;[90m# StarsStepdefinitions.i_click_on_Star_filter(int)&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI see all Hotels are filtered with &amp#27;[0m&amp#27;[32m&amp#27;[1m5&amp#27;[0m&amp#27;[32m Star rating&amp#27;[0m      &amp#27;[90m# StarsStepdefinitions.i_see_all_Hotels_are_filtered_with_Star_rating(int)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe Savoy hotel is shown in filtered results&amp#27;[0m           &amp#27;[90m# CommonStepDefinitions.the_Savoy_hotel_is_shown_in_filtered_results()&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mGeorge Limerick hotel is not shown in filtered results&amp#27;[0m &amp#27;[90m# CommonStepDefinitions.george_Limerick_hotel_is_not_shown_in_filtered_results()&amp#27;[0m
+2020-10-03 11:19:10 INFO  Helpers:30 - Waiting for an element: By.id: onetrust-accept-btn-handler
+
+  Background: User navigates to Search results                         &amp#27;[90m# Starfilter.feature:4&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on Booking home page&amp#27;[0m                                    &amp#27;[90m# CommonStepDefinitions.i_am_on_Booking_home_page()&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI Enter Limerick as City&amp#27;[0m                                       &amp#27;[90m# CommonStepDefinitions.i_Enter_Limerick_as_City()&amp#27;[0m
+    &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mI Enter dates for one night from &amp#27;[0m&amp#27;[31m&amp#27;[1m3&amp#27;[0m&amp#27;[31m months&amp#27;[0m                      &amp#27;[90m# CommonStepDefinitions.i_Enter_dates_for_one_night_from_months(int)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .bui-calendar__control--next svg  (tried for 10 second(s) with 500 MILLISECONDS interval)
+      Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+      System info: host: 'IE4-CP-L531', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-48-generic', java.version: '11.0.2'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528139 (47ead77cb35ad2a9a83248b292151462a66cd881), userDataDir=/tmp/.org.chromium.Chromium.gBaJKg}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=85.0.4183.121, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+      Session ID: b76976e31d45fa6303768646903af181
+      	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+      	at pageObjects.HomePage.selectDates(HomePage.java:84)
+      	at stepdefs.CommonStepDefinitions.i_Enter_dates_for_one_night_from_months(CommonStepDefinitions.java:37)
+      	at ✽.And I Enter dates for one night from 3 months(Starfilter.feature:7)
+      &amp#27;[0m
+    &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI click on Search Button&amp#27;[0m                                      &amp#27;[90m# CommonStepDefinitions.i_click_on_Search_Button()&amp#27;[0m
+    &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI can see All types of rentals are loaded with filter options&amp#27;[0m &amp#27;[90m# CommonStepDefinitions.i_can_see_All_types_of_rentals_are_loaded_with_filter_options()&amp#27;[0m
+&amp#27;[34mURL at failure: https://www.booking.com/&amp#27;[0m
+
+  @4Starscenario
+  Scenario: To Test 4 Star Rating Filter                   &amp#27;[90m# Starfilter.feature:21&amp#27;[0m
+    &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mUser is on search results page&amp#27;[0m                   &amp#27;[90m# CommonStepDefinitions.user_is_on_search_results_page()&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI checked if any filters are activated and cleared&amp#27;[0m &amp#27;[90m# CommonStepDefinitions.i_checked_if_any_filters_are_activated_and_cleared()&amp#27;[0m
+    &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI click on &amp#27;[0m&amp#27;[36m&amp#27;[1m4&amp#27;[0m&amp#27;[36m Star filter&amp#27;[0m                          &amp#27;[90m# StarsStepdefinitions.i_click_on_Star_filter(int)&amp#27;[0m
+    &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI see all Hotels are filtered with &amp#27;[0m&amp#27;[36m&amp#27;[1m4&amp#27;[0m&amp#27;[36m Star rating&amp#27;[0m  &amp#27;[90m# StarsStepdefinitions.i_see_all_Hotels_are_filtered_with_Star_rating(int)&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe Savoy hotel is not shown in filtered results&amp#27;[0m   &amp#27;[90m# StarsStepdefinitions.the_Savoy_hotel_is_not_shown_in_filtered_results()&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mGeorge Limerick hotel is shown in filtered results&amp#27;[0m &amp#27;[90m# CommonStepDefinitions.george_Limerick_hotel_is_shown_in_filtered_results()&amp#27;[0m
+]]></system-out>
+    <system-err>2020-10-03 11:18:55.417:INFO::Scenario is about to start: To Test 5 Star Rating Filter
+2020-10-03 11:19:08.594:INFO::Scenario is ended: To Test 5 Star Rating Filter
+2020-10-03 11:19:08.596:INFO::Scenario is about to start: To Test 4 Star Rating Filter
+2020-10-03 11:19:23.614:INFO::Scenario is ended: To Test 4 Star Rating Filter
+</system-err>
+  </testcase>
+</testsuite>

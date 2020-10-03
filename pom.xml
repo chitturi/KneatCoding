@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.uday</groupId>
-	<artifactId>DingAutomation</artifactId>
+	<artifactId>KneatAutomation</artifactId>
 	<version>1.1</version>
 
 	<dependencies>
@@ -37,7 +37,8 @@
 					<artifactId>junit</artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency>
+	</dependency>
+		
 		<!-- <dependency> <groupId>info.cukes</groupId> <artifactId>cucumber-core</artifactId> 
 			<version>1.2.5</version> </dependency> -->
 		<dependency>
@@ -156,13 +157,10 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.14.1</version>
 				<configuration>
-				   <parallel>classes</parallel>
-                   <forkMode>perthread</forkMode>
-                   <threadCount>2</threadCount>
-                   <includes>
-                    <include>**/*Runner.java</include>
-                   </includes>
-				</configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
 			</plugin>
 			<plugin>
 				<groupId>net.masterthought</groupId>

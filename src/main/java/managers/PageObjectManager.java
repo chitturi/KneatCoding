@@ -1,18 +1,24 @@
 package managers;
 
 import org.openqa.selenium.WebDriver;
-import pageObjects.LoginPage;
+import pageObjects.HomePage;
+import pageObjects.SearchResultsPage;
 
 public class PageObjectManager {
 
 	private WebDriver driver;
-	private LoginPage loginPage;
+	private HomePage loginPage;
+	private SearchResultsPage searchResultsPage;
 	
 	public PageObjectManager(WebDriver driver) {
 		this.driver = driver;
 	}
 	
-	public LoginPage getLoginPage() {
-		return (loginPage == null) ? loginPage = new LoginPage(driver) : loginPage;
+	public HomePage getHomePage() {
+		return (loginPage == null) ? loginPage = new HomePage(driver) : loginPage;
+	}
+	
+	public SearchResultsPage getSearchresults() {
+		return (searchResultsPage == null) ? searchResultsPage = new SearchResultsPage(driver) : searchResultsPage;
 	}
 }

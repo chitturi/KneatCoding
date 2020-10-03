@@ -2,45 +2,45 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-09-27T02:35:18Z" name="Default suite" finished-at="2020-09-27T02:35:33Z" duration-ms="15327">
+  <suite started-at="2020-10-03T10:23:01Z" name="Default suite" finished-at="2020-10-03T10:24:11Z" duration-ms="70201">
     <groups>
       <group name="cucumber">
-        <method signature="DingRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.DingRunner@363a52f]" name="feature" class="runner.DingRunner"/>
+        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@534a5a98]" name="feature" class="runner.TestRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2020-09-27T02:35:18Z" name="Default test" finished-at="2020-09-27T02:35:33Z" duration-ms="15327">
-      <class name="runner.DingRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.DingRunner@363a52f]" started-at="2020-09-27T02:35:18Z" name="setUpClass" finished-at="2020-09-27T02:35:19Z" duration-ms="1822" status="PASS">
+    <test started-at="2020-10-03T10:23:01Z" name="Default test" finished-at="2020-10-03T10:24:11Z" duration-ms="70201">
+      <class name="runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.TestRunner@534a5a98]" started-at="2020-10-03T10:23:01Z" name="setUpClass" finished-at="2020-10-03T10:23:03Z" duration-ms="2081" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.DingRunner@363a52f]" started-at="2020-09-27T02:35:19Z" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-09-27T02:35:25Z" duration-ms="5906" status="PASS">
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@534a5a98]" started-at="2020-10-03T10:23:03Z" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-10-03T10:23:41Z" duration-ms="38016" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CRUD Operations on Pet]]>
+                <![CDATA[To Test Suana filter]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.DingRunner@363a52f]" started-at="2020-09-27T02:35:25Z" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-09-27T02:35:33Z" duration-ms="7420" status="PASS">
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@534a5a98]" started-at="2020-10-03T10:23:41Z" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-10-03T10:24:11Z" duration-ms="29779" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[To Test failed login scenarios]]>
+                <![CDATA[To Test Star filter]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.DingRunner@363a52f]" started-at="2020-09-27T02:35:33Z" name="tearDownClass" finished-at="2020-09-27T02:35:33Z" duration-ms="93" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@534a5a98]" started-at="2020-10-03T10:24:11Z" name="tearDownClass" finished-at="2020-10-03T10:24:11Z" duration-ms="226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runner.DingRunner -->
+      </class> <!-- runner.TestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

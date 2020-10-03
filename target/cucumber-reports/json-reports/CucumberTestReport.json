@@ -3,88 +3,77 @@
     "line": 2,
     "elements": [
       {
-        "before": [
-          {
-            "result": {
-              "duration": 33244843,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ServiceHooks.initializeTest(Scenario)"
-            }
-          }
-        ],
         "line": 4,
-        "name": "Create a pet - POST CALL",
+        "name": "User navigates to Search results",
         "description": "",
-        "id": "crud-operations-on-pet;create-a-pet---post-call",
-        "after": [
-          {
-            "result": {
-              "duration": 342293,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ServiceHooks.embedScreenshot(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 1112667598,
+              "duration": 4149388617,
               "status": "passed"
             },
             "line": 5,
-            "name": "I have a payload with pet information",
+            "name": "I am on Booking home page",
             "match": {
-              "location": "APIStepdefinitions.i_have_a_payload_with_pet_information()"
+              "location": "CommonStepDefinitions.i_am_on_Booking_home_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1548025336,
+              "duration": 1378859244,
               "status": "passed"
             },
             "line": 6,
-            "name": "I send a POST request to add a new pet",
+            "name": "I Enter Limerick as City",
             "match": {
-              "location": "APIStepdefinitions.i_send_a_POST_request_to_add_a_new_pet()"
+              "location": "CommonStepDefinitions.i_Enter_Limerick_as_City()"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 5455802,
+              "duration": 584408776,
               "status": "passed"
             },
             "line": 7,
-            "name": "I get a response with 200 success",
+            "name": "I Enter dates for one night from 3 months",
             "match": {
               "arguments": [
                 {
-                  "val": "200",
-                  "offset": 22
+                  "val": "3",
+                  "offset": 33
                 }
               ],
-              "location": "APIStepdefinitions.i_get_a_response_with_success(int)"
+              "location": "CommonStepDefinitions.i_Enter_dates_for_one_night_from_months(int)"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 476960357,
+              "duration": 106209288,
               "status": "passed"
             },
             "line": 8,
-            "name": "I validate pet details in response body",
+            "name": "I click on Search Button",
             "match": {
-              "location": "APIStepdefinitions.i_validate_pet_details_in_response_body()"
+              "location": "CommonStepDefinitions.i_click_on_Search_Button()"
             },
-            "keyword": "And "
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3296589173,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I can see All types of rentals are loaded with filter options",
+            "match": {
+              "location": "CommonStepDefinitions.i_can_see_All_types_of_rentals_are_loaded_with_filter_options()"
+            },
+            "keyword": "Then "
           }
         ]
       },
@@ -92,26 +81,26 @@
         "before": [
           {
             "result": {
-              "duration": 122383,
+              "duration": 8151854,
               "status": "passed"
             },
             "match": {
-              "location": "ServiceHooks.initializeTest(Scenario)"
+              "location": "ServiceHooks.beforeScenario(Scenario)"
             }
           }
         ],
-        "line": 10,
-        "name": "Find a pet - GET CALL based on Pet ID",
+        "line": 12,
+        "name": "To Test Spa Rating Filter",
         "description": "",
-        "id": "crud-operations-on-pet;find-a-pet---get-call-based-on-pet-id",
+        "id": "to-test-suana-filter;to-test-spa-rating-filter",
         "after": [
           {
             "result": {
-              "duration": 122857,
+              "duration": 350193941,
               "status": "passed"
             },
             "match": {
-              "location": "ServiceHooks.embedScreenshot(Scenario)"
+              "location": "ServiceHooks.afterScenario(Scenario)"
             }
           }
         ],
@@ -120,161 +109,168 @@
         "steps": [
           {
             "result": {
-              "duration": 67853,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "I had ID of pet",
-            "match": {
-              "location": "APIStepdefinitions.i_had_ID_of_pet()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 928636869,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "I send a GET request to get details of pet based on ID",
-            "match": {
-              "location": "APIStepdefinitions.i_send_a_GET_request_to_get_details_of_pet_based_on_ID()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 205876,
+              "duration": 215808761,
               "status": "passed"
             },
             "line": 13,
-            "name": "I get a response with 200 success",
+            "name": "User is on search results page",
             "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 22
-                }
-              ],
-              "location": "APIStepdefinitions.i_get_a_response_with_success(int)"
+              "location": "CommonStepDefinitions.user_is_on_search_results_page()"
             },
-            "keyword": "Then "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 35723804,
+              "duration": 2608604290,
               "status": "passed"
             },
             "line": 14,
-            "name": "I can see pet details in response body",
+            "name": "I checked if any filters are activated and cleared",
             "match": {
-              "location": "APIStepdefinitions.i_can_see_pet_details_in_response_body()"
+              "location": "CommonStepDefinitions.i_checked_if_any_filters_are_activated_and_cleared()"
             },
             "keyword": "And "
-          }
-        ]
-      },
-      {
-        "before": [
+          },
           {
             "result": {
-              "duration": 197680,
+              "duration": 3331070274,
               "status": "passed"
             },
+            "line": 15,
+            "name": "I click on Spa filter",
             "match": {
-              "location": "ServiceHooks.initializeTest(Scenario)"
-            }
-          }
-        ],
-        "line": 16,
-        "name": "Update a pet - PUT CALL to update Pet Status",
-        "description": "",
-        "id": "crud-operations-on-pet;update-a-pet---put-call-to-update-pet-status",
-        "after": [
+              "location": "SpaStepDefinitions.i_click_on_Spa_filter()"
+            },
+            "keyword": "When "
+          },
           {
             "result": {
-              "duration": 140897,
+              "duration": 140588968,
               "status": "passed"
             },
+            "line": 16,
+            "name": "I see all Hotels are filtered with Spa option",
             "match": {
-              "location": "ServiceHooks.embedScreenshot(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
+              "location": "SpaStepDefinitions.i_see_all_Hotels_are_filtered_with_Spa_option()"
+            },
+            "keyword": "Then "
+          },
           {
             "result": {
-              "duration": 50879,
+              "duration": 43802282,
               "status": "passed"
             },
             "line": 17,
-            "name": "I had ID of pet",
+            "name": "The Savoy hotel is shown in filtered results",
             "match": {
-              "location": "APIStepdefinitions.i_had_ID_of_pet()"
+              "location": "CommonStepDefinitions.the_Savoy_hotel_is_shown_in_filtered_results()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39525605,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Absolute Hotel Limerick is shown in filtered results",
+            "match": {
+              "location": "SpaStepDefinitions.absolute_Hotel_Limerick_is_shown_in_filtered_results()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 84438958,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "George Limerick hotel is not shown in filtered results",
+            "match": {
+              "location": "CommonStepDefinitions.george_Limerick_hotel_is_not_shown_in_filtered_results()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@Spascenario"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User navigates to Search results",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2789349005,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on Booking home page",
+            "match": {
+              "location": "CommonStepDefinitions.i_am_on_Booking_home_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1333734,
+              "duration": 1367804726,
               "status": "passed"
             },
-            "line": 18,
-            "name": "I want to update pet status as \"sold\"",
+            "line": 6,
+            "name": "I Enter Limerick as City",
             "match": {
-              "arguments": [
-                {
-                  "val": "sold",
-                  "offset": 32
-                }
-              ],
-              "location": "APIStepdefinitions.i_want_to_update_pet_status_as(String)"
+              "location": "CommonStepDefinitions.i_Enter_Limerick_as_City()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 684522525,
+              "duration": 530677873,
               "status": "passed"
             },
-            "line": 19,
-            "name": "I send a PUT request with pet ID and status as sold",
+            "line": 7,
+            "name": "I Enter dates for one night from 3 months",
             "match": {
-              "location": "APIStepdefinitions.i_send_a_POST_request_with_pet_ID_and_status_as_sold()"
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 33
+                }
+              ],
+              "location": "CommonStepDefinitions.i_Enter_dates_for_one_night_from_months(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 174005436,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on Search Button",
+            "match": {
+              "location": "CommonStepDefinitions.i_click_on_Search_Button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 340752,
+              "duration": 2994503381,
               "status": "passed"
             },
-            "line": 20,
-            "name": "I get a response with 200 success",
+            "line": 9,
+            "name": "I can see All types of rentals are loaded with filter options",
             "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 22
-                }
-              ],
-              "location": "APIStepdefinitions.i_get_a_response_with_success(int)"
+              "location": "CommonStepDefinitions.i_can_see_All_types_of_rentals_are_loaded_with_filter_options()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 30028558,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "I can see pet details updated in response body",
-            "match": {
-              "location": "APIStepdefinitions.i_can_see_pet_details_updated_in_response_body()"
-            },
-            "keyword": "And "
           }
         ]
       },
@@ -282,26 +278,26 @@
         "before": [
           {
             "result": {
-              "duration": 147846,
+              "duration": 240230,
               "status": "passed"
             },
             "match": {
-              "location": "ServiceHooks.initializeTest(Scenario)"
+              "location": "ServiceHooks.beforeScenario(Scenario)"
             }
           }
         ],
-        "line": 23,
-        "name": "Delete a pet - DELETE PET based on Pet ID",
+        "line": 22,
+        "name": "To Test Suana Rating Filter",
         "description": "",
-        "id": "crud-operations-on-pet;delete-a-pet---delete-pet-based-on-pet-id",
+        "id": "to-test-suana-filter;to-test-suana-rating-filter",
         "after": [
           {
             "result": {
-              "duration": 127721,
+              "duration": 340967427,
               "status": "passed"
             },
             "match": {
-              "location": "ServiceHooks.embedScreenshot(Scenario)"
+              "location": "ServiceHooks.afterScenario(Scenario)"
             }
           }
         ],
@@ -310,70 +306,94 @@
         "steps": [
           {
             "result": {
-              "duration": 45447,
+              "duration": 61421882,
               "status": "passed"
             },
-            "line": 24,
-            "name": "I had ID of pet",
+            "line": 23,
+            "name": "User is on search results page",
             "match": {
-              "location": "APIStepdefinitions.i_had_ID_of_pet()"
+              "location": "CommonStepDefinitions.user_is_on_search_results_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 939164765,
+              "duration": 2605079265,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I checked if any filters are activated and cleared",
+            "match": {
+              "location": "CommonStepDefinitions.i_checked_if_any_filters_are_activated_and_cleared()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6179722591,
               "status": "passed"
             },
             "line": 25,
-            "name": "I send a DELETE request with pet ID",
+            "name": "I click on Suana filter",
             "match": {
-              "location": "APIStepdefinitions.i_send_a_DELETE_request_with_pet_ID()"
+              "location": "SpaStepDefinitions.i_click_on_Suana_filter()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 196815,
+              "duration": 192204665,
               "status": "passed"
             },
             "line": 26,
-            "name": "I get a response with 200 success",
+            "name": "I see all Hotels are filtered with Suana option",
             "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 22
-                }
-              ],
-              "location": "APIStepdefinitions.i_get_a_response_with_success(int)"
+              "location": "SpaStepDefinitions.i_see_all_Hotels_are_filtered_with_Suana_option()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 17661708,
+              "duration": 3524189500,
               "status": "passed"
             },
             "line": 27,
-            "name": "I can see deleted pet details in response body",
+            "name": "Limerick Strand hotel is shown in filtered results",
             "match": {
-              "location": "APIStepdefinitions.i_can_see_deleted_pet_details_in_response_body()"
+              "location": "SpaStepDefinitions.limerick_Strand_hotel_is_shown_in_filtered_results()"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 835778187,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "George Limerick hotel is not shown in filtered results",
+            "match": {
+              "location": "CommonStepDefinitions.george_Limerick_hotel_is_not_shown_in_filtered_results()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 21,
+            "name": "@Suanascenario"
           }
         ]
       }
     ],
-    "name": "CRUD Operations on Pet",
+    "name": "To Test Suana filter",
     "description": "",
-    "id": "crud-operations-on-pet",
+    "id": "to-test-suana-filter",
     "keyword": "Feature",
-    "uri": "APITesting.feature",
+    "uri": "SpaAndSuanafilter.feature",
     "tags": [
       {
         "line": 1,
-        "name": "@APItest"
+        "name": "@SpaAndSuanafeature"
       }
     ]
   },
@@ -381,112 +401,77 @@
     "line": 2,
     "elements": [
       {
-        "before": [
-          {
-            "result": {
-              "duration": 111009,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ServiceHooks.initializeTest(Scenario)"
-            }
-          }
-        ],
-        "line": 5,
-        "name": "Test with entering wrong password",
+        "line": 4,
+        "name": "User navigates to Search results",
         "description": "",
-        "id": "to-test-failed-login-scenarios;test-with-entering-wrong-password",
-        "after": [
-          {
-            "result": {
-              "duration": 95053,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ServiceHooks.embedScreenshot(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 1933724623,
+              "duration": 2710348546,
               "status": "passed"
             },
-            "line": 6,
-            "name": "I am on Paypal UK login page",
+            "line": 5,
+            "name": "I am on Booking home page",
             "match": {
-              "location": "LoginStepDefinitions.i_am_on_Paypal_UK_login_page()"
+              "location": "CommonStepDefinitions.i_am_on_Booking_home_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 443090546,
+              "duration": 1339512646,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I Enter Limerick as City",
+            "match": {
+              "location": "CommonStepDefinitions.i_Enter_Limerick_as_City()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 450747951,
               "status": "passed"
             },
             "line": 7,
-            "name": "I enter email \"chitturi.udaykiran@gmail.com\" and click on Next button",
+            "name": "I Enter dates for one night from 3 months",
             "match": {
               "arguments": [
                 {
-                  "val": "chitturi.udaykiran@gmail.com",
-                  "offset": 15
+                  "val": "3",
+                  "offset": 33
                 }
               ],
-              "location": "LoginStepDefinitions.i_enter_email_and_click_on_Next_button(String)"
+              "location": "CommonStepDefinitions.i_Enter_dates_for_one_night_from_months(int)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 652400112,
+              "duration": 3171546353,
               "status": "passed"
             },
             "line": 8,
-            "name": "I see Password page with password field",
+            "name": "I click on Search Button",
             "match": {
-              "location": "LoginStepDefinitions.i_see_Password_page_with_password_field()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 937821278,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "I enter wrong password \"testpassword\" and click on Login",
-            "match": {
-              "arguments": [
-                {
-                  "val": "testpassword",
-                  "offset": 24
-                }
-              ],
-              "location": "LoginStepDefinitions.i_enter_wrong_password_and_click_on_Login(String)"
+              "location": "CommonStepDefinitions.i_click_on_Search_Button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 35204560,
+              "duration": 377464370,
               "status": "passed"
             },
-            "line": 10,
-            "name": "I see Login error with incorrect information",
+            "line": 9,
+            "name": "I can see All types of rentals are loaded with filter options",
             "match": {
-              "location": "LoginStepDefinitions.i_see_Login_error_with_incorrect_information()"
+              "location": "CommonStepDefinitions.i_can_see_All_types_of_rentals_are_loaded_with_filter_options()"
             },
             "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 4,
-            "name": "@login"
           }
         ]
       },
@@ -494,26 +479,26 @@
         "before": [
           {
             "result": {
-              "duration": 79920,
+              "duration": 72823,
               "status": "passed"
             },
             "match": {
-              "location": "ServiceHooks.initializeTest(Scenario)"
+              "location": "ServiceHooks.beforeScenario(Scenario)"
             }
           }
         ],
         "line": 12,
-        "name": "Test without entering any email in Email address field",
+        "name": "To Test 5 Star Rating Filter",
         "description": "",
-        "id": "to-test-failed-login-scenarios;test-without-entering-any-email-in-email-address-field",
+        "id": "to-test-star-filter;to-test-5-star-rating-filter",
         "after": [
           {
             "result": {
-              "duration": 109567,
+              "duration": 354951488,
               "status": "passed"
             },
             "match": {
-              "location": "ServiceHooks.embedScreenshot(Scenario)"
+              "location": "ServiceHooks.afterScenario(Scenario)"
             }
           }
         ],
@@ -522,37 +507,166 @@
         "steps": [
           {
             "result": {
-              "duration": 840164322,
+              "duration": 41634136,
               "status": "passed"
             },
             "line": 13,
-            "name": "I am on Paypal UK login page",
+            "name": "User is on search results page",
             "match": {
-              "location": "LoginStepDefinitions.i_am_on_Paypal_UK_login_page()"
+              "location": "CommonStepDefinitions.user_is_on_search_results_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 158682650,
+              "duration": 2453175777,
               "status": "passed"
             },
             "line": 14,
-            "name": "I click on Login button with empty Email field",
+            "name": "I checked if any filters are activated and cleared",
             "match": {
-              "location": "LoginStepDefinitions.i_click_on_Login_button_with_empty_Email_field()"
+              "location": "CommonStepDefinitions.i_checked_if_any_filters_are_activated_and_cleared()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2178754931,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click on 5 Star filter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 11
+                }
+              ],
+              "location": "StarsStepdefinitions.i_click_on_Star_filter(int)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 86116838,
+              "duration": 143734554,
               "status": "passed"
             },
-            "line": 15,
-            "name": "I see an error with information to enter Email address or mobile number",
+            "line": 16,
+            "name": "I see all Hotels are filtered with 5 Star rating",
             "match": {
-              "location": "LoginStepDefinitions.i_see_an_error_with_information_to_enter_Email_address_or_mobile_number()"
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 35
+                }
+              ],
+              "location": "StarsStepdefinitions.i_see_all_Hotels_are_filtered_with_Star_rating(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 32005352,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "The Savoy hotel is shown in filtered results",
+            "match": {
+              "location": "CommonStepDefinitions.the_Savoy_hotel_is_shown_in_filtered_results()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 126748729,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "George Limerick hotel is not shown in filtered results",
+            "match": {
+              "location": "CommonStepDefinitions.george_Limerick_hotel_is_not_shown_in_filtered_results()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@5Starscenario"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User navigates to Search results",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2920690172,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on Booking home page",
+            "match": {
+              "location": "CommonStepDefinitions.i_am_on_Booking_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1249095861,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I Enter Limerick as City",
+            "match": {
+              "location": "CommonStepDefinitions.i_Enter_Limerick_as_City()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 522001234,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I Enter dates for one night from 3 months",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 33
+                }
+              ],
+              "location": "CommonStepDefinitions.i_Enter_dates_for_one_night_from_months(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2641963140,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on Search Button",
+            "match": {
+              "location": "CommonStepDefinitions.i_click_on_Search_Button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 357295390,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I can see All types of rentals are loaded with filter options",
+            "match": {
+              "location": "CommonStepDefinitions.i_can_see_All_types_of_rentals_are_loaded_with_filter_options()"
             },
             "keyword": "Then "
           }
@@ -562,26 +676,26 @@
         "before": [
           {
             "result": {
-              "duration": 219625,
+              "duration": 82068,
               "status": "passed"
             },
             "match": {
-              "location": "ServiceHooks.initializeTest(Scenario)"
+              "location": "ServiceHooks.beforeScenario(Scenario)"
             }
           }
         ],
-        "line": 17,
-        "name": "Test without entering any password in password field",
+        "line": 21,
+        "name": "To Test 4 Star Rating Filter",
         "description": "",
-        "id": "to-test-failed-login-scenarios;test-without-entering-any-password-in-password-field",
+        "id": "to-test-star-filter;to-test-4-star-rating-filter",
         "after": [
           {
             "result": {
-              "duration": 83472,
+              "duration": 291273039,
               "status": "passed"
             },
             "match": {
-              "location": "ServiceHooks.embedScreenshot(Scenario)"
+              "location": "ServiceHooks.afterScenario(Scenario)"
             }
           }
         ],
@@ -590,82 +704,106 @@
         "steps": [
           {
             "result": {
-              "duration": 1269577751,
+              "duration": 56332250,
               "status": "passed"
             },
-            "line": 18,
-            "name": "I am on Paypal UK login page",
+            "line": 22,
+            "name": "User is on search results page",
             "match": {
-              "location": "LoginStepDefinitions.i_am_on_Paypal_UK_login_page()"
+              "location": "CommonStepDefinitions.user_is_on_search_results_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 296858460,
+              "duration": 2731264423,
               "status": "passed"
             },
-            "line": 19,
-            "name": "I enter email \"chitturi.udaykiran@gmail.com\" and click on Next button",
+            "line": 23,
+            "name": "I checked if any filters are activated and cleared",
+            "match": {
+              "location": "CommonStepDefinitions.i_checked_if_any_filters_are_activated_and_cleared()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4546309891,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click on 4 Star filter",
             "match": {
               "arguments": [
                 {
-                  "val": "chitturi.udaykiran@gmail.com",
-                  "offset": 15
+                  "val": "4",
+                  "offset": 11
                 }
               ],
-              "location": "LoginStepDefinitions.i_enter_email_and_click_on_Next_button(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 617907839,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "I see Password page with password field",
-            "match": {
-              "location": "LoginStepDefinitions.i_see_Password_page_with_password_field()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 84610922,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "Click on Login button with empty password field",
-            "match": {
-              "location": "LoginStepDefinitions.click_on_Login_button_with_empty_password_field()"
+              "location": "StarsStepdefinitions.i_click_on_Star_filter(int)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 40517692,
+              "duration": 600863094,
               "status": "passed"
             },
-            "line": 22,
-            "name": "I see an error Password is required",
+            "line": 25,
+            "name": "I see all Hotels are filtered with 4 Star rating",
             "match": {
-              "location": "LoginStepDefinitions.i_see_an_error_Password_is_required()"
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 35
+                }
+              ],
+              "location": "StarsStepdefinitions.i_see_all_Hotels_are_filtered_with_Star_rating(int)"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 427250105,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "The Savoy hotel is not shown in filtered results",
+            "match": {
+              "location": "StarsStepdefinitions.the_Savoy_hotel_is_not_shown_in_filtered_results()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20302012,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "George Limerick hotel is shown in filtered results",
+            "match": {
+              "location": "CommonStepDefinitions.george_Limerick_hotel_is_shown_in_filtered_results()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 20,
+            "name": "@4Starscenario"
           }
         ]
       }
     ],
-    "name": "To Test failed login scenarios",
+    "name": "To Test Star filter",
     "description": "",
-    "id": "to-test-failed-login-scenarios",
+    "id": "to-test-star-filter",
     "keyword": "Feature",
-    "uri": "PayPalLogin.feature",
+    "uri": "Starfilter.feature",
     "tags": [
       {
         "line": 1,
-        "name": "@functionaltest"
+        "name": "@Starfeature"
       }
     ]
   }
